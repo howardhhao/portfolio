@@ -16,6 +16,7 @@ import {
   SiExpo,
   SiGooglemaps,
   SiTypescript,
+  SiVercel,
 } from "react-icons/si";
 
 export const projects = [
@@ -26,6 +27,7 @@ export const projects = [
     tech: [
       <SiNextdotjs title="Next.js" className="text-black dark:text-white" />,
       <SiTailwindcss title="Tailwind CSS" className="text-sky-500" />,
+      <SiVercel title="Vercel" className="text-black dark:text-white" />,
     ],
     link: "#",
   },
