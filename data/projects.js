@@ -29,7 +29,7 @@ export const projects = [
       <SiTailwindcss title="Tailwind CSS" className="text-sky-500" />,
       <SiVercel title="Vercel" className="text-black dark:text-white" />,
     ],
-    link: "#",
+    link: "https://github.com/howardhhao/portfolio",
   },
   {
     title: "Family Plan Subscription Manager",
