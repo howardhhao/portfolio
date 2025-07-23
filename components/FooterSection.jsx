@@ -6,7 +6,7 @@ const FooterSection = () => {
       <div className="max-w-4xl mx-auto px-4">
         <h3 className="text-xl font-semibold mb-4">Let’s Connect</h3>
         
-        <div className="flex justify-center gap-6 mb-6 text-2xl">
+        <div className="flex justify-center gap-5 mb-6 text-2xl">
           <a
             href="https://github.com/howardhhao"
             target="_blank"

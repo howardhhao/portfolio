@@ -14,7 +14,7 @@ const ProjectsSection = ({ projects }) => {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="min-w-[450px] max-w-[380px] min-h-[480px] flex-shrink-0 bg-white dark:bg-white/5 backdrop-blur-md dark:backdrop-blur-lg
+              className="min-w-[420px] max-w-[380px] min-h-[400px] flex-shrink-0 bg-white dark:bg-white/5 backdrop-blur-md dark:backdrop-blur-lg
                          border border-gray-200 dark:border-white/10 rounded-2xl p-5 
                          shadow-md dark:shadow-[0_4px_30px_rgba(255,255,255,0.05)]
                          hover:shadow-lg hover:scale-[1.03] transition-all duration-300 ease-in-out"
@@ -25,7 +25,7 @@ const ProjectsSection = ({ projects }) => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-cover rounded-xl shadow-md"
+                    className="w-full h-60 object-cover rounded-xl shadow-md"
                   />
                 </div>
 
