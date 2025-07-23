@@ -25,6 +25,10 @@
   }
 }
 
-.animate-fade-scale {
+.animate-fade-scale-1 {
   animation: fadeScaleIn 0.3s ease-out forwards;
+}
+
+.animate-fade-scale {
+  animation: fadeScaleIn 1.0s ease-out forwards;
 }

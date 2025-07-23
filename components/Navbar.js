@@ -49,7 +49,7 @@ const Navbar = () => {
 
       {/* Fullscreen Menu Modal */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-white dark:bg-gray-900 flex flex-col items-center justify-center z-50 animate-fade-scale">
+        <div className="fixed inset-0 bg-white dark:bg-gray-900 flex flex-col items-center justify-center z-50 animate-fade-scale-1">
 
           {/* Close button */}
           <button

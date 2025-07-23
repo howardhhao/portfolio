@@ -1,5 +1,6 @@
 import React from "react";
 import { HiOutlineDocumentText } from "react-icons/hi2";
+import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
   return (
@@ -8,7 +9,7 @@ const HeroSection = () => {
       className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-800 text-gray-900 dark:text-white"
     >
       {/* Hero Section */}
-      <div className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16 max-w-7xl mx-auto gap-3">
+      <div className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16 max-w-7xl mx-auto gap-3 animate-fade-scale">
         
         {/* Image Section */}
         <div className="flex-1 hidden md:flex justify-center items-center">
@@ -23,10 +24,20 @@ const HeroSection = () => {
 
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left mr-16">
-          <h1 className="text-6xl font-extrabold mb-6 leading-tight">
-            Hi, I'm{" "}
-            <span className="text-blue-700 dark:text-blue-400">Wen Hao</span>
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+  Hi, I'm{" "}
+  <span className="text-blue-700 dark:text-blue-400">
+    <Typewriter
+      words={['Wen Hao']}
+      loop={false}
+      cursor
+      cursorStyle="|"
+      typeSpeed={70}
+      deleteSpeed={40}
+      delaySpeed={1500}
+    />
+  </span>
+</h1>
 
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto md:mx-0">
             Final-year Computer Science student at{" "}
@@ -54,7 +65,7 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-
+      
       {/* About Blurb */}
       <div className="py-10 px-6 bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-center">
         <div className="max-w-4xl mx-auto">
@@ -62,7 +73,7 @@ const HeroSection = () => {
             Always thinking, always building.
           </h2>
           
-          <div className="flex flex-wrap justify-center gap-6 mt-16 mb-4">
+          <div className="flex flex-wrap justify-center gap-6 mt-16 mb-8">
   {[
     { title: "Hackathons Participated", number: "10" },
     { title: "Projects Built", number: "8" },
