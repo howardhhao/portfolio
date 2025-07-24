@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectsSection = ({ projects }) => {
   return (
-    <section id="projects" className="py-24 px-6 bg-transparent text-white">
+    <section id="projects"  className="py-24 px-6 bg-transparent text-white">
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-5 text-white tracking-tight">
@@ -13,7 +13,7 @@ const ProjectsSection = ({ projects }) => {
 </p>
 
         {/* Project Cards - Horizontal Scroll */}
-        <div className="flex overflow-x-auto gap-6 px-2 py-2 no-scrollbar snap-x snap-mandatory">
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false" className="flex overflow-x-auto gap-6 px-2 py-2 no-scrollbar snap-x snap-mandatory">
           {projects.map((project, idx) => (
             <div
               key={idx}

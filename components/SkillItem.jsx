@@ -3,6 +3,7 @@ import React from "react";
 const SkillItem = ({ icon, label }) => {
   return (
     <div
+      data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false"
       className="group flex flex-col items-center justify-center px-4 py-5 w-full bg-transparent backdrop-blur-md rounded-lg border border-white/10 hover:border-white/20"
       role="listitem"
       aria-label={`Skill: ${label}`}

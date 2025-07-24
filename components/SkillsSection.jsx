@@ -76,7 +76,7 @@ export default function SkillsSection() {
 </p>
 
         {/* Tabs */}
-        <div className="flex justify-center mb-8">
+        <div data-aos="zoom-in" data-aos-duration="1500" data-aos-once="false" className="flex justify-center mb-8">
           <div className="bg-transparent border border-gray-700 rounded-xl p-2 flex flex-wrap justify-center gap-2">
             {Object.keys(skillsByCategory).map((category) => (
               <button

@@ -42,7 +42,7 @@ const ExperiencesSection = ({ experienceList }) => {
 </p>
 
         {/* Timeline */}
-        <div className="relative border-l border-neutral-700 pl-6">
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false" className="relative border-l border-neutral-700 pl-6">
           {sortedYears.map((year) => (
             <div key={year} className="mb-10">
               <h3 className="text-xl font-semibold text-neutral-400 mb-6">{year}</h3>
