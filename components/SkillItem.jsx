@@ -3,18 +3,20 @@ import React from "react";
 const SkillItem = ({ icon, label }) => {
   return (
     <div
-      className="group flex items-center gap-2 px-4 py-2 bg-white/20 dark:bg-white/10 backdrop-blur-md rounded-xl border border-white/20 shadow-sm transition transform hover:scale-105 hover:shadow-md hover:bg-white/30 dark:hover:bg-white/20"
+      className="group flex flex-col items-center justify-center px-4 py-5 w-full bg-white/10 backdrop-blur-md rounded-lg border border-white/20 hover:border-white"
       role="listitem"
       aria-label={`Skill: ${label}`}
     >
-      <span className="text-xl transition-transform duration-300 ease-in-out group-hover:rotate-[12deg] group-hover:scale-110">
+      <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white/20 text-2xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-6">
         {icon}
-      </span>
-      <span className="text-gray-700 dark:text-gray-200" title={label}>
+      </div>
+
+      <span className="text-white text-sm font-medium mt-3 text-center" title={label}>
         {label}
       </span>
     </div>
   );
 };
+
 
 export default SkillItem;

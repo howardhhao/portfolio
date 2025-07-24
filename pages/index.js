@@ -10,18 +10,18 @@ import { experienceList } from '@/data/experienceList';
 
 export default function Home() {
   return (
-    <main className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white scroll-smooth">
+    <main className="bg-gray-900 text-white scroll-smooth">
       <Head>
-  <title>Wen Hao | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="/logo.png" />
-</Head>
+        <title>Wen Hao | Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logo.png" />
+      </Head>
 
       <Navbar />
       <HeroSection />
       <SkillsSection />
       <ProjectsSection projects={projects} />
-      <ExperiencesSection experienceList={experienceList} />
+  <ExperiencesSection experienceList={experienceList} />
       <FooterSection />
     </main>
   );

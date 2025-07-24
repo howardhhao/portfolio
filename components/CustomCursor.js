@@ -7,8 +7,8 @@ const CustomCursor = () => {
     const cursor = cursorRef.current;
 
     const moveCursor = (e) => {
-      const offsetX = 6; // adjust X hotspot offset (e.g., shift right)
-      const offsetY = 6; // adjust Y hotspot offset (e.g., shift down)
+      const offsetX = 6;
+      const offsetY = 6;
 
       cursor.style.left = `${e.clientX - offsetX}px`;
       cursor.style.top = `${e.clientY - offsetY}px`;

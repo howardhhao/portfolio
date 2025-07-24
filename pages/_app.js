@@ -1,12 +1,13 @@
 import "@/styles/globals.css";
-import { ThemeProvider } from "@/context/ThemeContext";
 import CustomCursor from "@/components/CustomCursor";
+import SpotlightWrapper from "@/components/SpotlightWrapper";
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider>
+    <SpotlightWrapper>
       <CustomCursor />
       <Component {...pageProps} />
-    </ThemeProvider>
+    </SpotlightWrapper>
+      
   );
 }

@@ -1,36 +1,38 @@
+import React from "react";
+
 const ExperienceCard = ({ title }) => {
-  const [competition, award] = title.split("–").map((str) => str.trim());
+  // Split into main title and award
+  const [competition, rawAward] = title.split(/[-–]/).map((str) => str.trim());
+  const award = rawAward || null;
+
+  // Define minimalistic badge colors
+  const getBadgeClass = (award) => {
+    if (!award) return "";
+    const a = award.toLowerCase();
+    if (a.includes("champion")) return "bg-yellow-300 text-black";
+    if (a.includes("runner up")) return "bg-gray-300 text-black";
+    if (a.includes("finalist")) return "bg-blue-300 text-black";
+    return "bg-white/20 text-white";
+  };
 
   return (
     <div
-      className="min-w-[350px] max-w-[350px] flex-shrink-0 
-  bg-white/80 dark:bg-white/5 
-  backdrop-blur-md dark:backdrop-blur-lg 
-  border border-gray-200 dark:border-white/10 
-  rounded-2xl p-6 
-  shadow-md dark:shadow-[0_4px_30px_rgba(255,255,255,0.05)] 
-  hover:shadow-xl hover:scale-[1.03] 
-  transition-all duration-300 ease-in-out"
-
+      className="w-full sm:max-w-xs flex flex-col items-center justify-center 
+                 bg-white/5 text-white border border-white/10 
+                 backdrop-blur-md p-6 rounded-2xl shadow-sm 
+                 hover:border-white/30 transition-all duration-300 text-center"
     >
-      {/* Glow ring on hover (dark mode) */}
-      <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-blue-500 transition duration-300 pointer-events-none" />
+      <h3 className="text-lg font-semibold mb-3">{competition}</h3>
 
-      {/* Competition Name */}
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white tracking-tight mb-2">
-        {competition}
-      </h3>
-
-      {/* Award Badge */}
-      <div
-        className="inline-block mt-3 px-4 py-2 text-sm font-medium 
-                   bg-blue-100 text-blue-800 
-                   dark:bg-white/10 dark:text-blue-200 
-                   dark:backdrop-blur-sm 
-                   rounded-full shadow-sm"
-      >
-        {award}
-      </div>
+      {award && (
+        <span
+          className={`inline-block px-4 py-1 text-sm font-medium rounded-full ${getBadgeClass(
+            award
+          )}`}
+        >
+          {award}
+        </span>
+      )}
     </div>
   );
 };
