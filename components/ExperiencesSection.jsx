@@ -34,9 +34,12 @@ const ExperiencesSection = ({ experienceList }) => {
   return (
     <section id="experiences" className="py-24 px-6 lg:px-12 xl:px-20 bg-transparent text-white">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-center tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-5 text-center tracking-tight">
           Experiences & Achievements
         </h2>
+        <p className="text-center text-gray-400 text-base md:text-lg mb-10">
+  A timeline of milestones, contributions and accomplishments throughout my journey
+</p>
 
         {/* Timeline */}
         <div className="relative border-l border-neutral-700 pl-6">
@@ -55,8 +58,8 @@ const ExperiencesSection = ({ experienceList }) => {
                     {/* Entry */}
                     <div
   className="ml-2 px-4 py-3 rounded-2xl bg-white/5 border border-white/10 
-             backdrop-blur-md shadow-[0_4px_30px_rgba(255,255,255,0.05)] 
-             hover:shadow-lg hover:border-white transition-all duration-300"
+             backdrop-blur-md
+             hover:shadow-lg hover:border-white/20 transition-all duration-300"
 >
                       <p className="text-sm sm:text-base font-medium flex items-center flex-wrap gap-2">
                         {event}

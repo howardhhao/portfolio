@@ -45,7 +45,7 @@ const HeroSection = () => {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 text-white font-semibold rounded-lg shadow-md border border-transparent hover:border-white/20 transition-all duration-300"
+            className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 text-white font-semibold rounded-lg shadow-md border border-white/10 hover:border-white/20 transition-all duration-300"
           >
             <HiOutlineDocumentText className="text-2xl" />
             Download CV

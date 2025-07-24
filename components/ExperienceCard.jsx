@@ -18,9 +18,9 @@ const ExperienceCard = ({ title }) => {
   return (
     <div
       className="w-full sm:max-w-xs flex flex-col items-center justify-center 
-                 bg-white/5 text-white border border-white/10 
+                 bg-white/5 text-white border border-transparent 
                  backdrop-blur-md p-6 rounded-2xl shadow-sm 
-                 hover:border-white/30 transition-all duration-300 text-center"
+                 hover:border-white/20 text-center"
     >
       <h3 className="text-lg font-semibold mb-3">{competition}</h3>
 

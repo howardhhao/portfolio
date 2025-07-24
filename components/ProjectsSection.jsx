@@ -5,9 +5,12 @@ const ProjectsSection = ({ projects }) => {
     <section id="projects" className="py-24 px-6 bg-transparent text-white">
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-8 text-white tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-5 text-white tracking-tight">
           Featured Projects
         </h2>
+        <p className="text-center text-gray-400 text-base md:text-lg mb-8">
+ Projects that highlight my skills across design, development and deployment
+</p>
 
         {/* Project Cards - Horizontal Scroll */}
         <div className="flex overflow-x-auto gap-6 px-2 py-2 no-scrollbar snap-x snap-mandatory">
@@ -15,9 +18,8 @@ const ProjectsSection = ({ projects }) => {
             <div
               key={idx}
               className="w-[90vw] sm:min-w-[420px] max-w-[420px] min-h-[420px] flex-shrink-0
-                         bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-5
-                         shadow-[0_4px_30px_rgba(255,255,255,0.05)]
-                         hover:shadow-lg hover:border-white"
+                         bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-5
+                         hover:shadow-lg hover:border-white/20"
             >
               <div className="flex flex-col h-full">
                 {/* Image */}

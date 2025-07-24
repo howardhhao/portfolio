@@ -10,7 +10,7 @@ import {
   SiFlutter, SiDart, SiTailwindcss, SiFirebase, SiVercel,
   SiCplusplus, SiExpo, SiMongodb, SiPostgresql, SiSupabase,
   SiExpress, SiBootstrap, SiFlask, SiStreamlit, SiAndroid,
-  SiAndroidstudio, SiGo
+  SiAndroidstudio, SiGo, SiVite
 } from "react-icons/si";
 
 const skillsByCategory = {
@@ -55,6 +55,7 @@ const skillsByCategory = {
     { icon: <FaGithub className="text-white" />, label: "GitHub" },
     { icon: <SiVercel className="text-white" />, label: "Vercel" },
     { icon: <SiExpo className="text-white" />, label: "Expo Go" },
+    { icon: <SiVite className="text-pink-500" />, label: "Vite" },
   ],
 };
 
@@ -67,9 +68,12 @@ export default function SkillsSection() {
       className="py-24 px-6 text-left bg-transparent text-white"
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-5 tracking-tight">
           Skills
         </h2>
+        <p className="text-gray-400 text-base md:text-lg mb-8">
+  Technologies and tools I’ve worked with across development stacks
+</p>
 
         {/* Tabs */}
         <div className="flex justify-center mb-8">
@@ -78,7 +82,7 @@ export default function SkillsSection() {
               <button
                 key={category}
                 onClick={() => setActiveTab(category)}
-                className={`px-4 py-2 rounded-lg font-medium transition text-sm md:text-base ${
+                className={`bg-transparent px-4 py-2 rounded-lg font-medium transition text-sm md:text-base ${
                   activeTab === category
                     ? "bg-white text-black"
                     : "text-gray-300 hover:bg-gray-700"
