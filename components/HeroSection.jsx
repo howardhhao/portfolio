@@ -3,7 +3,7 @@ import { HiOutlineDocumentText } from "react-icons/hi2";
 import { FiChevronDown } from "react-icons/fi";
 import { Typewriter } from "react-simple-typewriter";
 import ParticlesBackground from "@/components/ParticlesBackground";
-
+import RollingNumber from './RollingNumber';
 
 const HeroSection = () => {
   const scrollToSkills = () => {
@@ -59,29 +59,30 @@ const HeroSection = () => {
 <div data-aos="fade-left" data-aos-duration="1500" className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-y-6 gap-x-8 text-center md:text-left text-gray-300">
   <div>
     <p className="text-3xl font-bold text-white transition-colors duration-300 hover:text-blue-300">
-      8+
+      <RollingNumber value="8+" />
     </p>
     <p className="text-sm sm:text-base mt-1">Projects</p>
   </div>
   <div>
     <p className="text-3xl font-bold text-white transition-colors duration-300 hover:text-blue-300">
-      10+
+      <RollingNumber value="9+" />
     </p>
     <p className="text-sm sm:text-base mt-1">Hackathons</p>
   </div>
   <div>
     <p className="text-3xl font-bold text-white transition-colors duration-300 hover:text-blue-300">
-      3+
+      <RollingNumber value="3+" />
     </p>
     <p className="text-sm sm:text-base mt-1">Years Experience</p>
   </div>
   <div>
     <p className="text-3xl font-bold text-white transition-colors duration-300 hover:text-blue-300">
-      3.73
+      <RollingNumber value="3.73" />
     </p>
     <p className="text-sm sm:text-base mt-1">CGPA</p>
   </div>
 </div>
+
         </div>
 
         {/* Image Section */}
