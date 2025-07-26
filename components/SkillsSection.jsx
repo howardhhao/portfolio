@@ -10,39 +10,48 @@ import {
   SiFlutter, SiDart, SiTailwindcss, SiFirebase, SiVercel,
   SiCplusplus, SiExpo, SiMongodb, SiPostgresql, SiSupabase,
   SiExpress, SiBootstrap, SiFlask, SiStreamlit, SiAndroid,
-  SiAndroidstudio, SiGo, SiVite
+  SiAndroidstudio, SiGo, SiVite, SiPostman,
+  SiCodeblocks
 } from "react-icons/si";
 
 const skillsByCategory = {
-  "Web & Mobile Development": [
+  "Frontend Dev": [
     { icon: <FaReact className="text-sky-500" />, label: "React JS" },
-    { icon: <SiNextdotjs className="text-white" />, label: "Next JS" },
-    { icon: <FaReact className="text-indigo-400" />, label: "React Native" },
+    { icon: <SiNextdotjs className="text-white" />, label: "Next.js" },
     { icon: <FaHtml5 className="text-orange-500" />, label: "HTML5" },
     { icon: <FaCss3Alt className="text-blue-600" />, label: "CSS3" },
     { icon: <SiTailwindcss className="text-cyan-500" />, label: "Tailwind CSS" },
     { icon: <SiBootstrap className="text-purple-600" />, label: "Bootstrap" },
+    { icon: <SiVite className="text-pink-500" />, label: "Vite" },
+  ],
+
+  "Mobile Development": [
+    { icon: <FaReact className="text-indigo-400" />, label: "React Native" },
+    { icon: <SiFlutter className="text-blue-400" />, label: "Flutter" },
     { icon: <SiAndroid className="text-green-700" />, label: "Android SDK" },
     { icon: <SiAndroidstudio className="text-green-600" />, label: "Android Studio" },
-    { icon: <SiFlutter className="text-blue-400" />, label: "Flutter" },
+    { icon: <SiExpo className="text-white" />, label: "Expo Go" },
   ],
+
+  "Backend Dev": [
+    { icon: <FaNodeJs className="text-green-700" />, label: "Node.js" },
+    { icon: <SiExpress className="text-white" />, label: "Express.js" },
+    { icon: <SiFlask className="text-white" />, label: "Flask" },
+    { icon: <SiGin className="text-cyan-600" />, label: "Gin (Go)" },
+    { icon: <SiStreamlit className="text-red-500" />, label: "Streamlit" },
+  ],
+
   "Programming Languages": [
     { icon: <FaJs className="text-yellow-400" />, label: "JavaScript" },
+    { icon: <SiTypescript className="text-blue-600" />, label: "TypeScript" },
     { icon: <FaPython className="text-blue-500" />, label: "Python" },
     { icon: <FaJava className="text-red-600" />, label: "Java" },
     { icon: <SiCplusplus className="text-purple-500" />, label: "C++" },
     { icon: <SiGo className="text-cyan-600" />, label: "Golang" },
     { icon: <SiDart className="text-blue-500" />, label: "Dart" },
-    { icon: <SiTypescript className="text-blue-600" />, label: "TypeScript" },
     { icon: <SiMysql className="text-orange-500" />, label: "SQL" },
   ],
-  "Backend": [
-    { icon: <FaNodeJs className="text-green-700" />, label: "Node.js" },
-    { icon: <SiExpress className="text-white" />, label: "Express.js" },
-    { icon: <SiFlask className="text-white" />, label: "Flask" },
-    { icon: <SiStreamlit className="text-red-500" />, label: "Streamlit" },
-    { icon: <SiGin className="text-cyan-600" />, label: "Gin (Go)" },
-  ],
+
   "Databases": [
     { icon: <SiFirebase className="text-yellow-500" />, label: "Firebase" },
     { icon: <SiPostgresql className="text-blue-700" />, label: "PostgreSQL" },
@@ -50,17 +59,21 @@ const skillsByCategory = {
     { icon: <SiSupabase className="text-green-500" />, label: "Supabase" },
     { icon: <SiSqlite className="text-sky-600" />, label: "SQLite" },
   ],
-  "CI/CD": [
+
+  "DevOps": [
     { icon: <FaGitAlt className="text-orange-600" />, label: "Git" },
     { icon: <FaGithub className="text-white" />, label: "GitHub" },
     { icon: <SiVercel className="text-white" />, label: "Vercel" },
-    { icon: <SiExpo className="text-white" />, label: "Expo Go" },
-    { icon: <SiVite className="text-pink-500" />, label: "Vite" },
+  ],
+
+  "Testing & API Tools": [
+    { icon: <SiPostman className="text-orange-600" />, label: "Postman" },
+    { icon: <SiCodeblocks className="text-purple-500" />, label: "Playwright" },
   ],
 };
 
 export default function SkillsSection() {
-  const [activeTab, setActiveTab] = useState("Web & Mobile Development");
+  const [activeTab, setActiveTab] = useState("Frontend Dev");
 
   return (
     <section
