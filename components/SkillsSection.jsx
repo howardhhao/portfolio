@@ -3,15 +3,15 @@ import SkillItem from "./SkillItem";
 
 import {
   FaReact, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava,
-  FaGitAlt, FaGithub, FaNodeJs
+  FaGitAlt, FaGithub, FaNodeJs,
+  FaMask
 } from "react-icons/fa";
 import {
   SiGin, SiSqlite, SiMysql, SiTypescript, SiNextdotjs,
   SiFlutter, SiDart, SiTailwindcss, SiFirebase, SiVercel,
   SiCplusplus, SiExpo, SiMongodb, SiPostgresql, SiSupabase,
   SiExpress, SiBootstrap, SiFlask, SiStreamlit, SiAndroid,
-  SiAndroidstudio, SiGo, SiVite, SiPostman,
-  SiCodeblocks
+  SiAndroidstudio, SiGo, SiVite, SiPostman, SiSelenium
 } from "react-icons/si";
 
 const skillsByCategory = {
@@ -68,7 +68,8 @@ const skillsByCategory = {
 
   "Testing & API Tools": [
     { icon: <SiPostman className="text-orange-600" />, label: "Postman" },
-    { icon: <SiCodeblocks className="text-purple-500" />, label: "Playwright" },
+    { icon: <FaMask className="text-green-500" />, label: "Playwright" },
+    { icon: <SiSelenium className="text-green-500" />, label: "Selenium" },
   ],
 };
 
