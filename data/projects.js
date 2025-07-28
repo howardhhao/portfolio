@@ -35,8 +35,8 @@ export const projects = [
   },
   
   {
-    title: "Family Plan Subscription Manager",
-    desc: "Developed a cross-platform mobile app using React Native to help users manage 'family-shared' subscriptions, with user roles and payment status tracking.",
+    title: "SubShare",
+    desc: "Developed a cross-platform mobile app to help users manage 'family-shared' subscriptions, with user roles and payment status tracking.",
     image: "/subshare.jpg",
     tech: [
       <FaReact title="React Native" className="text-indigo-400" />,
@@ -48,8 +48,8 @@ export const projects = [
   },
   {
     title: "TBMDelivery",
-    desc: "Built a real-time communication dashboard for logistics operations using React Native, Firebase & socket-based messaging.",
-    image: "/projects/tbmdelivery.png",
+    desc: "A cross-platform mobile app to check orders and schedules, provide real time services tracking and communication between installers and customers",
+    image: "/TBMDelivery.jpg",
     tech: [
       <SiTypescript title="TypeScript" className="text-blue-600" />,
       <FaNodeJs title="Node.js" className="text-green-600" />,
@@ -62,7 +62,7 @@ export const projects = [
   },
   {
   title: "UniLoan",
-  desc: "A student microloan system that allows university students to request, track and repay microloans. Includes role-based auth and admin approval features.",
+  desc: "A student microloan website that allows university students to request, track and repay microloans. Includes role-based auth and admin approval features.",
   image: "/uniloan.png",
   tech: [
     <SiTypescript title="TypeScript" className="text-blue-600" />,
@@ -74,7 +74,7 @@ export const projects = [
 },
   {
     title: "UMLIB Room Reservation",
-    desc: "Created a mobile app for study room bookings using React Native with Firebase integration for backend operations.",
+    desc: "A cross-platform mobile app for study room bookings.",
     image: "umlib.jpg",
     tech: [
       <FaReact title="React Native" className="text-indigo-400" />,
