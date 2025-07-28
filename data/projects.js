@@ -61,9 +61,9 @@ export const projects = [
     link: "#",
   },
   {
-  title: "Student MicroLoan System",
-  desc: "A backend MVP system using Go and PostgreSQL that allows university students to request, track and repay microloans. Includes role-based auth and admin approval features.",
-  image: "/projects/microloan.png",
+  title: "UniLoan",
+  desc: "A student microloan system that allows university students to request, track and repay microloans. Includes role-based auth and admin approval features.",
+  image: "/uniloan.png",
   tech: [
     <SiTypescript title="TypeScript" className="text-blue-600" />,
     <SiGo title="Go" className="text-cyan-600" />,
@@ -85,8 +85,8 @@ export const projects = [
   },
   {
     title: "UniJobs",
-    desc: "Developed the payment module and integrated JWT-based authentication for a job portal using the MERN stack.",
-    image: "/projects/unijobs.png",
+    desc: "Developed the payment module and integrated JWT-based authentication for a university studnets freelance job portal using the MERN stack.",
+    image: "/unijobs.png",
     tech: [
       <SiMongodb title="MongoDB" className="text-green-600" />,
       <FaNodeJs title="Node.js" className="text-green-600" />,
@@ -94,23 +94,23 @@ export const projects = [
       <FaReact title="React" className="text-sky-500" />,
       <FaCss3Alt title="CSS3" className="text-blue-600" />,
     ],
-    link: "#",
+    link: "https://github.com/howardhhao/UM-WIF2003_WEB",
   },
   {
     title: "MyHomeCircle",
     desc: "Built the Community Module for a mobile app enabling technician bookings using Android (Java/Kotlin) and Firebase.",
-    image: "/projects/myhomecircle.png",
+    image: "/myhomecircle.png",
     tech: [
       <SiFirebase title="Firebase" className="text-yellow-500" />,
       <FaAndroid title="Android Studio" className="text-green-700" />,
       <FaJava title="Java" className="text-red-600" />,
     ],
-    link: "#",
+    link: "https://github.com/howardhhao/myHomeCircle",
   },
   {
     title: "JOJOLand Game",
     desc: "Create a virtual game world run in console using data structures like priority queues, trees, and graphs.",
-    image: "/projects/jojoland.png",
+    image: "/jojoland.png",
     tech: [<FaJava title="Java" className="text-red-600" />],
     link: "https://github.com/howardhhao/jojoland",
   },
