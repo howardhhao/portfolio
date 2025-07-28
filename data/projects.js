@@ -109,10 +109,10 @@ export const projects = [
   },
   {
     title: "JOJOLand Game",
-    desc: "Create a virtual game world using key data structures like priority queues, trees, and graphs.",
+    desc: "Create a virtual game world run in console using data structures like priority queues, trees, and graphs.",
     image: "/projects/jojoland.png",
     tech: [<FaJava title="Java" className="text-red-600" />],
-    link: "#",
+    link: "https://github.com/howardhhao/jojoland",
   },
   {
     title: "Slurm Analysis Web Dashboard",
