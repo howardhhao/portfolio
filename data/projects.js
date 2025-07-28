@@ -44,7 +44,7 @@ export const projects = [
       <SiPostgresql title="PostgreSQL" className="text-blue-700" />,
       <SiExpo title="Expo" className="text-white" />,
     ],
-    link: "#",
+    link: "https://github.com/howardhhao/subshare",
   },
   {
     title: "TBMDelivery",
