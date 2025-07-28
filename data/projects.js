@@ -81,7 +81,7 @@ export const projects = [
       <SiFirebase title="Firebase" className="text-yellow-500" />,
       <SiExpo title="Expo" className="text-white" />,
     ],
-    link: "#",
+    link: "https://github.com/howardhhao/umlib",
   },
   {
     title: "UniJobs",
