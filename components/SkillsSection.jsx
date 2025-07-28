@@ -11,7 +11,7 @@ import {
   SiFlutter, SiDart, SiTailwindcss, SiFirebase, SiVercel,
   SiCplusplus, SiExpo, SiMongodb, SiPostgresql, SiSupabase,
   SiExpress, SiBootstrap, SiFlask, SiStreamlit, SiAndroid,
-  SiAndroidstudio, SiGo, SiVite, SiPostman, SiSelenium
+  SiAndroidstudio, SiGo, SiVite, SiPostman, SiSelenium, SiKotlin
 } from "react-icons/si";
 
 const skillsByCategory = {
@@ -30,7 +30,8 @@ const skillsByCategory = {
     { icon: <SiFlutter className="text-blue-400" />, label: "Flutter" },
     { icon: <SiAndroid className="text-green-700" />, label: "Android SDK" },
     { icon: <SiAndroidstudio className="text-green-600" />, label: "Android Studio" },
-    { icon: <SiExpo className="text-white" />, label: "Expo Go" },
+    { icon: <SiExpo className="text-white" />, label: "Expo" },
+    { icon: <SiKotlin className="text-indigo-500" />, label: "Kotlin" },
   ],
 
   "Backend Dev": [

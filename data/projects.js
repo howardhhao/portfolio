@@ -19,6 +19,7 @@ import {
   SiVercel,
   SiGo,
   SiGin,
+  SiKotlin,
 } from "react-icons/si";
 
 export const projects = [
@@ -51,10 +52,10 @@ export const projects = [
     desc: "A cross-platform mobile app to check orders and schedules, provide real time services tracking and communication between installers and customers",
     image: "/TBMDelivery.jpg",
     tech: [
-      <SiTypescript title="TypeScript" className="text-blue-600" />,
-      <FaNodeJs title="Node.js" className="text-green-600" />,
       <FaReact title="React" className="text-sky-500" />,
+      <SiTypescript title="TypeScript" className="text-blue-600" />,
       <SiFirebase title="Firebase" className="text-yellow-500" />,
+      <FaNodeJs title="Node.js" className="text-green-600" />,
       <SiGooglemaps title="Google Maps" className="text-red-500" />,
       <SiExpo title="Expo" className="text-white" />,
     ],
@@ -65,6 +66,7 @@ export const projects = [
   desc: "A student microloan website that allows university students to request, track and repay microloans. Includes role-based auth and admin approval features.",
   image: "/uniloan.png",
   tech: [
+    <FaReact title="React" className="text-sky-500" />,
     <SiTypescript title="TypeScript" className="text-blue-600" />,
     <SiGo title="Go" className="text-cyan-600" />,
     <SiPostgresql title="PostgreSQL" className="text-blue-500" />,
@@ -88,10 +90,10 @@ export const projects = [
     desc: "Developed the payment module and integrated JWT-based authentication for a university studnets freelance job portal using the MERN stack.",
     image: "/unijobs.png",
     tech: [
+      <FaReact title="React" className="text-sky-500" />,
       <SiMongodb title="MongoDB" className="text-green-600" />,
       <FaNodeJs title="Node.js" className="text-green-600" />,
       <SiExpress title="Express.js" className="text-white" />,
-      <FaReact title="React" className="text-sky-500" />,
       <FaCss3Alt title="CSS3" className="text-blue-600" />,
     ],
     link: "https://github.com/howardhhao/UM-WIF2003_WEB",
@@ -101,9 +103,11 @@ export const projects = [
     desc: "Built the Community Module for a mobile app enabling technician bookings using Android (Java/Kotlin) and Firebase.",
     image: "/myhomecircle.png",
     tech: [
-      <SiFirebase title="Firebase" className="text-yellow-500" />,
       <FaAndroid title="Android Studio" className="text-green-700" />,
+      <SiFirebase title="Firebase" className="text-yellow-500" />,
       <FaJava title="Java" className="text-red-600" />,
+      <SiKotlin title="Kotlin" className="text-indigo-500" />,
+      
     ],
     link: "https://github.com/howardhhao/myHomeCircle",
   },
@@ -121,7 +125,6 @@ export const projects = [
     tech: [
       <FaJava title="Java" className="text-red-600" />,
       <FaReact title="React" className="text-sky-500" />,
-      <FaCss3Alt title="CSS3" className="text-blue-600" />,
     ],
     link: "https://github.com/howardhhao/SLURM_Analysis",
   },
