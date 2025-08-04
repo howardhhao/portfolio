@@ -60,7 +60,7 @@ const HeroSection = () => {
 <div data-aos="fade-left" data-aos-duration="1500" className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-y-6 gap-x-8 text-center md:text-left text-gray-300">
   <div>
     <p className="text-3xl font-bold text-white transition-colors duration-300 hover:text-blue-300">
-      <RollingNumber value="8+" />
+      <RollingNumber value="9+" />
     </p>
     <p className="text-sm sm:text-base mt-1">Projects</p>
   </div>

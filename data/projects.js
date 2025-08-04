@@ -61,6 +61,19 @@ export const projects = [
     ],
     link: "#",
   },
+    {
+  title: "FinAI",
+  desc: "A personal finance mobile app that lets users track daily expenses via manual input and OCR receipt scanning, with a smart AI budget coach that analyzes weekly spending against personalized budget goals.",
+  image: "/finAI.jpg",
+  tech: [
+    <FaReact title="React Native" className="text-sky-500" />,
+    <SiTypescript title="TypeScript" className="text-blue-600" />,
+    <SiSupabase title="Supabase" className="text-green-500" />,
+    <SiPostgresql title="PostgreSQL" className="text-blue-500" />,
+    <SiExpo title="Expo" className="text-white" />,
+  ],
+  link: "#",
+},
   {
   title: "UniLoan",
   desc: "A student microloan website that allows university students to request, track and repay microloans. Includes role-based auth and admin approval features.",
