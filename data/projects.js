@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     title: "TBMDelivery",
-    desc: "A cross-platform mobile app to check orders and schedules, provide real time services tracking and communication between installers and customers",
+    desc: "A cross-platform mobile app to check orders and schedules, provide real time services tracking and communication between installers and customers.",
     image: "/TBMDelivery.jpg",
     tech: [
       <FaReact title="React" className="text-sky-500" />,
@@ -63,7 +63,7 @@ export const projects = [
   },
     {
   title: "FinAI",
-  desc: "A personal finance mobile app that lets users track daily expenses via manual input and OCR receipt scanning, with a smart AI budget coach that analyzes weekly spending against personalized budget goals.",
+  desc: "A personal finance mobile app that can track daily expenses via OCR receipt scanning, with a smart AI budget coach that analyzes weekly spending against personalized budget goals.",
   image: "/finAI.jpg",
   tech: [
     <FaReact title="React Native" className="text-sky-500" />,
