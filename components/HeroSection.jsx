@@ -78,7 +78,7 @@ const HeroSection = () => {
   </div>
   <div>
     <p className="text-3xl font-bold text-white transition-colors duration-300 hover:text-blue-300">
-      <RollingNumber value="3.73" />
+      <RollingNumber value="3.75" />
     </p>
     <p className="text-sm sm:text-base mt-1">CGPA</p>
   </div>

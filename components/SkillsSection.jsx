@@ -11,7 +11,7 @@ import {
   SiFlutter, SiDart, SiTailwindcss, SiFirebase, SiVercel,
   SiCplusplus, SiExpo, SiMongodb, SiPostgresql, SiSupabase,
   SiExpress, SiBootstrap, SiFlask, SiStreamlit, SiAndroid,
-  SiAndroidstudio, SiGo, SiVite, SiPostman, SiSelenium, SiKotlin
+  SiAndroidstudio, SiGo, SiVite, SiPostman, SiSelenium, SiKotlin, SiHuggingface
 } from "react-icons/si";
 
 const skillsByCategory = {
@@ -25,21 +25,23 @@ const skillsByCategory = {
     { icon: <SiVite className="text-pink-500" />, label: "Vite" },
   ],
 
-  "Mobile Development": [
+  "Mobile Dev": [
     { icon: <FaReact className="text-indigo-400" />, label: "React Native" },
     { icon: <SiFlutter className="text-blue-400" />, label: "Flutter" },
+    { icon: <SiKotlin className="text-indigo-500" />, label: "Kotlin" },
     { icon: <SiAndroid className="text-green-700" />, label: "Android SDK" },
     { icon: <SiAndroidstudio className="text-green-600" />, label: "Android Studio" },
     { icon: <SiExpo className="text-white" />, label: "Expo" },
-    { icon: <SiKotlin className="text-indigo-500" />, label: "Kotlin" },
   ],
 
-  "Backend Dev": [
+  "Backend & API Dev": [
     { icon: <FaNodeJs className="text-green-700" />, label: "Node.js" },
     { icon: <SiExpress className="text-white" />, label: "Express.js" },
     { icon: <SiFlask className="text-white" />, label: "Flask" },
     { icon: <SiGin className="text-cyan-600" />, label: "Gin (Go)" },
     { icon: <SiStreamlit className="text-red-500" />, label: "Streamlit" },
+    { icon: <SiPostman className="text-orange-600" />, label: "Postman" },
+    { icon: <SiHuggingface className="text-yellow-400" />, label: "Hugging Face" }
   ],
 
   "Programming Languages": [
@@ -53,7 +55,7 @@ const skillsByCategory = {
     { icon: <SiMysql className="text-orange-500" />, label: "SQL" },
   ],
 
-  "Databases": [
+  "Database": [
     { icon: <SiFirebase className="text-yellow-500" />, label: "Firebase" },
     { icon: <SiPostgresql className="text-blue-700" />, label: "PostgreSQL" },
     { icon: <SiMongodb className="text-green-600" />, label: "MongoDB" },
@@ -67,12 +69,13 @@ const skillsByCategory = {
     { icon: <SiVercel className="text-white" />, label: "Vercel" },
   ],
 
-  "Testing & API Tools": [
-    { icon: <SiPostman className="text-orange-600" />, label: "Postman" },
+  "Testing": [
     { icon: <FaMask className="text-green-500" />, label: "Playwright" },
     { icon: <SiSelenium className="text-green-500" />, label: "Selenium" },
   ],
+
 };
+
 
 export default function SkillsSection() {
   const [activeTab, setActiveTab] = useState("Frontend Dev");
