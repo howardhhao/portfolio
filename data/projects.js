@@ -72,7 +72,7 @@ export const projects = [
     <SiPostgresql title="PostgreSQL" className="text-blue-500" />,
     <SiExpo title="Expo" className="text-white" />,
   ],
-  link: "#",
+  link: "https://github.com/howardhhao/FinAI",
 },
   {
     title: "UMLIB Room Reservation",
