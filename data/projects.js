@@ -75,19 +75,6 @@ export const projects = [
   link: "#",
 },
   {
-  title: "UniLoan",
-  desc: "A student microloan website that allows university students to request, track and repay microloans. Includes role-based auth and admin approval features.",
-  image: "/uniloan.png",
-  tech: [
-    <FaReact title="React" className="text-sky-500" />,
-    <SiTypescript title="TypeScript" className="text-blue-600" />,
-    <SiGo title="Go" className="text-cyan-600" />,
-    <SiPostgresql title="PostgreSQL" className="text-blue-500" />,
-    <SiGin title="Gin" className="text-pink-500" />,
-  ],
-  link: "#",
-},
-  {
     title: "UMLIB Room Reservation",
     desc: "A cross-platform mobile app for study room bookings.",
     image: "umlib.jpg",
