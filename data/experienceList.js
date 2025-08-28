@@ -1,4 +1,5 @@
 export const experienceList = [
+  { title: "Y3S2 2025 – Dean List Achiever" },
   { title: "UMHackathon 2025 – 4th Runner Up" },
   { title: "KITAHACK 2024 – Champion" },
   { title: "UMHackathon 2024 – Finalist" },
